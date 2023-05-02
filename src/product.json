@@ -1,0 +1,29 @@
+[
+  {
+    "title": "pescado1",
+    "description": "pescado",
+    "thumbnail": "foto",
+    "stock": 12,
+    "code": "3345",
+    "price": 123,
+    "id": 1
+  },
+  {
+    "title": "pescado2",
+    "description": "pescado",
+    "thumbnail": "foto",
+    "stock": 13,
+    "code": "33345",
+    "price": 122,
+    "id": 1
+  },
+  {
+    "title": "pescado3",
+    "description": "pescado",
+    "thumbnail": "foto",
+    "stock": 13,
+    "code": "133345",
+    "price": 122,
+    "id": 1
+  }
+]
