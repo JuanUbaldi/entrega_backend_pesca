@@ -1,29 +1,112 @@
 [
+  [
+    {
+      "id": 1,
+      "title": "buzo",
+      "description": "buzo de lana1",
+      "thumbnail": "foto",
+      "stock": 12,
+      "code": "123",
+      "price": 123
+    },
+    {
+      "id": 2,
+      "title": "remera",
+      "description": "remera1",
+      "thumbnail": "foto",
+      "stock": 13,
+      "code": "1234",
+      "price": 1234
+    },
+    {
+      "id": 3,
+      "title": "pantalon",
+      "description": "pantalon1",
+      "thumbnail": "foto",
+      "stock": 13,
+      "code": "12345",
+      "price": 12345
+    },
+    {
+      "id": 4,
+      "title": "campera",
+      "description": "campera1",
+      "thumbnail": "foto",
+      "stock": 13,
+      "code": "123456",
+      "price": 123456
+    },
+    {
+      "id": 5,
+      "title": "bufanda",
+      "description": "bufanda1",
+      "thumbnail": "foto",
+      "stock": 13,
+      "code": "1234567",
+      "price": 1234567
+    },
+    {
+      "id": 6,
+      "title": "gorro",
+      "description": "gorro1",
+      "thumbnail": "foto",
+      "stock": 13,
+      "code": "12345678",
+      "price": 1234567
+    }
+  ],
   {
-    "title": "pescado1",
-    "description": "pescado",
+    "id": 1,
+    "title": "buzo",
+    "description": "buzo de lana1",
     "thumbnail": "foto",
     "stock": 12,
-    "code": "3345",
-    "price": 123,
-    "id": 1
+    "code": "123",
+    "price": 123
   },
   {
-    "title": "pescado2",
-    "description": "pescado",
+    "id": 2,
+    "title": "remera",
+    "description": "remera1",
     "thumbnail": "foto",
     "stock": 13,
-    "code": "33345",
-    "price": 122,
-    "id": 1
+    "code": "1234",
+    "price": 1234
   },
   {
-    "title": "pescado3",
-    "description": "pescado",
+    "id": 3,
+    "title": "pantalon",
+    "description": "pantalon1",
     "thumbnail": "foto",
     "stock": 13,
-    "code": "133345",
-    "price": 122,
-    "id": 1
+    "code": "12345",
+    "price": 12345
+  },
+  {
+    "id": 4,
+    "title": "campera",
+    "description": "campera1",
+    "thumbnail": "foto",
+    "stock": 13,
+    "code": "123456",
+    "price": 123456
+  },
+  {
+    "id": 5,
+    "title": "bufanda",
+    "description": "bufanda1",
+    "thumbnail": "foto",
+    "stock": 13,
+    "code": "1234567",
+    "price": 1234567
+  },
+  {
+    "id": 6,
+    "title": "gorro",
+    "description": "gorro1",
+    "thumbnail": "foto",
+    "stock": 13,
+    "code": "12345678",
+    "price": 1234567
   }
 ]

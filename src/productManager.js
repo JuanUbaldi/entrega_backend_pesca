@@ -1,9 +1,8 @@
-const fs = require("fs");
+import fs from "fs";
 
-class ProductManager {
+export class ProductManager {
   constructor() {
     this.path = "./src/product.json";
-    /*  this.id = id; */
   }
   async getProducts() {
     try {
@@ -34,12 +33,13 @@ class ProductManager {
       ) {
         return "field missing";
       }
-      const lastProductId = data.lenght > 0 ? data[data.lenght - 1].id : 1;
+      //let lastProductId = data.lenght > 0 ? data[data.lenght - 1].id + 1 : 1;
+      let id = data[data.length - 1]?.id + 1;
 
-      const newProduct = { ...product, id: lastProductId };
+      const newProduct = { id: id, ...product };
       data.push(newProduct);
       const productString = JSON.stringify(data, null, 2);
-      await fs.promises.writeFile("product.json", productString);
+      await fs.promises.writeFile("./src/product.json", productString);
       return newProduct;
     } catch (error) {
       throw new Error(error);
@@ -58,7 +58,7 @@ class ProductManager {
     }
   }
 
-  async update(id, newData) {
+  async updateProduct(id, newData) {
     let data = await this.getProducts();
     const position = data.findIndex((product) => product.id === id);
     if (position !== -1) {
@@ -81,35 +81,63 @@ class ProductManager {
   }
 }
 const product1 = {
-  title: "pescado1",
-  description: "pescado",
+  id: 1,
+  title: "buzo",
+  description: "buzo de lana1",
   thumbnail: "foto",
   stock: 12,
-  code: "3345",
+  code: "123",
   price: 123,
 };
 const product2 = {
-  title: "pescado2",
-  description: "pescado",
+  id: 2,
+  title: "remera",
+  description: "remera1",
   thumbnail: "foto",
   stock: 13,
-  code: "33345",
-  price: 122,
+  code: "1234",
+  price: 1234,
 };
 const product3 = {
-  title: "pescado3",
-  description: "pescado",
+  title: "pantalon",
+  description: "pantalon1",
   thumbnail: "foto",
   stock: 13,
-  code: "133345",
-  price: 122,
+  code: "12345",
+  price: 12345,
 };
+const product4 = {
+  title: "campera",
+  description: "campera1",
+  thumbnail: "foto",
+  stock: 13,
+  code: "123456",
+  price: 123456,
+};
+const product5 = {
+  title: "bufanda",
+  description: "bufanda1",
+  thumbnail: "foto",
+  stock: 13,
+  code: "1234567",
+  price: 1234567,
+};
+const product6 = {
+  title: "gorro",
+  description: "gorro1",
+  thumbnail: "foto",
+  stock: 13,
+  code: "12345678",
+  price: 1234567,
+};
+
 /* const productsManager = new ProductManager();
 const asyncFn = async () => {
-  console.log(await productsManager.addProduct(product1));
-  console.log(await productsManager.addProduct(product3));
-  console.log(await productsManager.getProducts());
+  await productsManager.addProduct(product1);
+  await productsManager.addProduct(product2);
+  await productsManager.addProduct(product3);
+  await productsManager.addProduct(product4);
+  await productsManager.addProduct(product5);
+  await productsManager.addProduct(product6);
 };
 asyncFn(); */
-
-module.exports = ProductManager;
